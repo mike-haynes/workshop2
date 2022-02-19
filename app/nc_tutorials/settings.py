@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-(j-#aqq@vs$3l#0(031z4_h(_*pa&ye#dt&x69_@(&a6(=+fpg
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'ec2-54-163-209-144.compute-1.amazonaws.com', '0.0.0.0', '127.0.0.1'
+    'ec2-54-163-209-144.compute-1.amazonaws.com', '0.0.0.0', 'localhost', '127.0.0.1'
 ]
 
 
@@ -129,9 +129,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 if DEBUG:
-    STATICFILES_DIRS = [os.path.joing(BASE_DIR, "static")]
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 else:
-    STATIC_ROOT = [os.path.joing(BASE_DIR, "static")]
+    STATIC_ROOT = [os.path.join(BASE_DIR, "static")]
 
 STATIC_URL = '/static/'
 
